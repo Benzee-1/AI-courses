@@ -1,0 +1,308 @@
+J’ai trouvé dans vos documents AIGP/NIST plusieurs termes de gouvernance et sécurité IA, notamment red teaming, threat modeling, security testing, continuous monitoring, data lineage, AI governance, risk mitigation hierarchy, vendor risk, surveillance continue, etc. dans AIGP_Cert_BOK_13March2026_FINAL.pdf, AIGP_Module3_Cours.docx et NIST.AI.600-1.pdf.
+
+Voici une liste très complète du jargon utilisé en sécurité IA (AI Security), organisée par domaine.
+
+1. Gouvernance et gestion des risques IA
+AI Governance
+Responsible AI (RAI)
+Trustworthy AI
+AI Risk Management (AI RMF)
+NIST AI RMF
+AI Safety
+AI Assurance
+AI Audit
+AI Compliance
+AI Controls
+AI Policy
+AI Certification
+AI Assurance Case
+AI Impact Assessment (AIIA)
+DPIA (Data Protection Impact Assessment)
+Algorithmic Impact Assessment (AIA)
+Residual Risk
+Risk Appetite
+Risk Tolerance
+Risk Register
+Risk Mitigation
+Risk Acceptance
+Risk Transfer
+Human Oversight
+Human-in-the-Loop (HITL)
+Human-on-the-Loop (HOTL)
+Human-out-of-the-Loop (HOOTL)
+Continuous Monitoring
+AI Lifecycle Governance
+AI Change Management
+Model Governance
+Third-Party AI Risk
+AI Vendor Risk
+AI Supply Chain Risk
+AI Inventory
+AI Registry
+Model Registry
+2. Attaques contre les LLM
+Prompt Injection
+Direct Prompt Injection
+Indirect Prompt Injection
+Remote Prompt Injection
+Prompt Leakage
+System Prompt Extraction
+Jailbreak
+Jailbreaking
+Role-play Attack
+DAN Attack (Do Anything Now)
+Prompt Smuggling
+Context Manipulation
+Context Poisoning
+Instruction Override
+Goal Hijacking
+Agent Hijacking
+Tool Hijacking
+Memory Poisoning
+Prompt Chaining Attack
+Adversarial Prompt Chaining
+Multiturn Attack
+Conversation Poisoning
+Context Window Attack
+3. Attaques Machine Learning classiques
+Adversarial Attack
+Adversarial AI
+Evasion Attack
+Poisoning Attack
+Data Poisoning
+Label Poisoning
+Model Poisoning
+Training Data Poisoning
+Backdoor Attack
+Trojan Attack
+Model Manipulation
+Gradient Attack
+Adversarial Example
+Adversarial Sample
+Model Extraction
+Model Stealing
+Model Replication
+Membership Inference
+Membership Inference Attack
+Model Inversion
+Reconstruction Attack
+Property Inference
+Shadow Model Attack
+4. Sécurité des données IA
+Data Governance
+Data Quality
+Data Lineage
+Data Provenance
+Data Integrity
+Data Authenticity
+Data Validation
+Data Leakage
+Data Exfiltration
+Sensitive Data Exposure
+PII Exposure
+Training Data Leakage
+Sensitive Information Disclosure
+Data Minimization
+Data Classification
+Data Residency
+Data Sovereignty
+Privacy by Design
+Privacy Enhancing Technologies (PETs)
+Differential Privacy
+Federated Learning
+Secure Data Pipeline
+5. Sécurité des architectures RAG
+RAG (Retrieval-Augmented Generation)
+RAG Security
+Vector Database Security
+Embedding Security
+Retrieval Attack
+Retrieval Manipulation
+Corpus Poisoning
+Knowledge Base Poisoning
+RAG Poisoning
+Vector Poisoning
+Retrieval Leakage
+Embedding Leakage
+Context Injection
+Memory Injection
+Document Injection
+Retrieval Drift
+6. Sécurité des agents IA
+Agentic AI
+AI Agent
+Multi-Agent System (MAS)
+Agent Security
+Agent Orchestration Security
+Autonomous Agent Risk
+Tool Use Security
+Tool Abuse
+Tool Exploitation
+API Abuse
+Agent Takeover
+Agent Escalation
+Agent Misalignment
+Agent Drift
+Goal Misalignment
+Autonomous Action Risk
+Agent Permission Boundaries
+Least Privilege for Agents
+7. Red Teaming et sécurité offensive
+AI Red Team
+AI Red Teaming
+LLM Red Teaming
+Adversarial Testing
+Security Testing
+Threat Modeling
+Threat Simulation
+Attack Emulation
+Penetration Testing
+AI Pentest
+Purple Teaming
+Tabletop Exercise
+Abuse Case
+Misuse Case
+Failure Mode Analysis
+Scenario Testing
+Safety Evaluation
+Robustness Evaluation
+Stress Testing
+
+Microsoft met explicitement en avant l’AI Red Team, le Red Teaming, les stratégies de mitigation et les évaluations continues.
+
+8. Défenses et protections
+Guardrails
+Safety Guardrails
+Policy Enforcement
+Content Filtering
+Toxicity Filtering
+Harm Detection
+Sensitive Data Detection
+Prompt Filtering
+Input Validation
+Output Validation
+Response Validation
+Sandboxing
+Isolation
+Secure Execution
+Runtime Protection
+Runtime Monitoring
+Behavioral Monitoring
+Access Control
+Zero Trust AI
+Defense in Depth
+Secure-by-Design
+Secure-by-Default
+Least Privilege
+Just-In-Time Access (JIT)
+9. Évaluation des modèles
+Benchmarking
+Model Evaluation
+Safety Evaluation
+Robustness Evaluation
+Reliability Testing
+Trustworthiness Testing
+Bias Testing
+Explainability Assessment
+Interpretability Testing
+Hallucination Evaluation
+LLM-as-a-Judge
+Eval Framework
+AI Evaluation Pipeline
+Safety Scorecard
+Risk Scoring
+Model Card
+10. Hallucinations et qualité
+Hallucination
+Confabulation
+Fabrication
+Grounding
+Grounded AI
+Fact Grounding
+Retrieval Grounding
+Hallucination Rate
+Truthfulness
+Factuality
+Faithfulness
+Verifiability
+Explainability
+Interpretability
+Transparency
+Traceability
+11. Sécurité MLOps / LLMOps
+MLOps
+LLMOps
+Secure MLOps
+Model Supply Chain
+AI Supply Chain
+AI-BOM (AI Bill of Materials)
+SBOM
+Model Registry
+Model Signing
+Model Provenance
+Model Integrity
+Secure Deployment
+Secure Serving
+Secure Inference
+Model Monitoring
+Model Drift
+Data Drift
+Concept Drift
+Drift Detection
+Continuous Validation
+Continuous Evaluation
+12. Acronymes incontournables
+Acronyme	SignificationAI	Artificial Intelligence
+GenAI	Generative AI
+LLM	Large Language Model
+SLM	Small Language Model
+RAG	Retrieval Augmented Generation
+HITL	Human In The Loop
+RMF	Risk Management Framework
+ATO	Authority To Operate
+PET	Privacy Enhancing Technologies
+MAS	Multi-Agent System
+MCP	Model Context Protocol
+MLOps	Machine Learning Operations
+LLMOps	Large Language Model Operations
+AI-BOM	AI Bill Of Materials
+SBOM	Software Bill Of Materials
+XAI	Explainable AI
+AIA	Algorithmic Impact Assessment
+DPIA	Data Protection Impact Assessment
+TTP	Tactics, Techniques and Procedures
+CoT	Chain of Thought
+RLHF	Reinforcement Learning from Human Feedback
+Les 30 termes à connaître absolument en 2026
+Prompt Injection
+Jailbreak
+Red Teaming
+RAG Poisoning
+Data Poisoning
+Model Poisoning
+Adversarial Attack
+Model Extraction
+Model Inversion
+Membership Inference
+AI Governance
+AI Risk Management
+AI Safety
+Guardrails
+Grounding
+Hallucination
+Explainability
+Zero Trust AI
+AI Supply Chain
+AI-BOM
+Agentic AI
+Tool Hijacking
+Context Poisoning
+Memory Poisoning
+Threat Modeling
+Safety Evaluation
+Continuous Monitoring
+Model Drift
+Data Lineage
+Human-in-the-Loop
+
+C'est aujourd'hui le vocabulaire le plus utilisé dans les référentiels NIST AI RMF, OWASP LLM Top 10, ISO 42001, EU AI Act, Microsoft AI Security et les équipes AI Security/AI Governance.
