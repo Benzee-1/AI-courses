@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Documentation Technique</title>
+
+<style>
+
+:root{
+    --primary:#2563eb;
+    --primary-dark:#1e40af;
+    --bg:#f5f7fb;
+    --card:#ffffff;
+    --text:#1f2937;
+    --text-light:#6b7280;
+    --border:#e5e7eb;
+
+    --success-bg:#ecfdf5;
+    --success-border:#10b981;
+
+    --warning-bg:#fffbeb;
+    --warning-border:#f59e0b;
+
+    --info-bg:#eff6ff;
+    --info-border:#3b82f6;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:
+        Inter,
+        Segoe UI,
+        Roboto,
+        Arial,
+        sans-serif;
+
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+}
+
+/***************************************************
+HEADER
+***************************************************/
+.hero{
+
+    background:
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #1e40af
+    );
+
+    color:white;
+    padding:80px 20px;
+}
+
+.hero-content{
+    max-width:1200px;
+    margin:auto;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero .subtitle{
+    font-size:1.2rem;
+    opacity:.9;
+}
+
+.metadata{
+    margin-top:25px;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/***************************************************
+LAYOUT
+***************************************************/
+.container{
+
+    max-width:1400px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:
+        300px
+        1fr;
+
+    gap:30px;
+
+    padding:40px 20px;
+}
+
+@media(max-width:1000px){
+
+    .container{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/***************************************************
+SIDEBAR
+***************************************************/
+.sidebar{
+
+    position:sticky;
+    top:20px;
+
+    background:white;
+    border:1px solid var(--border);
+
+    border-radius:14px;
+    padding:20px;
+
+    height:fit-content;
+}
+
+.sidebar h3{
+    margin-bottom:15px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin-bottom:10px;
+}
+
+.sidebar a{
+    text-decoration:none;
+    color:var(--primary);
+}
+
+.sidebar a:hover{
+    color:var(--primary-dark);
+}
+
+/***************************************************
+CONTENT
+***************************************************/
+.content{
+
+    background:var(--card);
+
+    border-radius:16px;
+    padding:40px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.05);
+}
+
+section{
+    margin-bottom:60px;
+}
+
+section h2{
+    margin-bottom:20px;
+    border-bottom:2px solid var(--border);
+    padding-bottom:10px;
+}
+
+section h3{
+    margin-top:25px;
+    margin-bottom:15px;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+/***************************************************
+CALL OUTS
+***************************************************/
+.callout{
+    padding:18px;
+    border-left:5px solid;
+    border-radius:10px;
+    margin:20px 0;
+}
+
+.callout.info{
+    background:var(--info-bg);
+    border-color:var(--info-border);
+}
+
+.callout.warning{
+    background:var(--warning-bg);
+    border-color:var(--warning-border);
+}
+
+.callout.success{
+    background:var(--success-bg);
+    border-color:var(--success-border);
+}
+
+/***************************************************
+CODE
+***************************************************/
+pre{
+    overflow:auto;
+    border-radius:12px;
+    background:#0f172a;
+    color:#e2e8f0;
+    padding:25px;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+
+code{
+    font-family:
+    Consolas,
+    Monaco,
+    monospace;
+}
+
+/***************************************************
+TABLE
+***************************************************/
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+thead{
+    background:#1f2937;
+    color:white;
+}
+
+th,
+td{
+    padding:14px;
+    border:1px solid var(--border);
+    text-align:left;
+}
+
+tbody tr:nth-child(even){
+    background:#f9fafb;
+}
+
+/***************************************************
+IMAGE
+***************************************************/
+.figure{
+    margin:30px 0;
+}
+
+.figure img{
+
+    width:100%;
+    border-radius:14px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.12);
+}
+
+.figure figcaption{
+
+    text-align:center;
+    margin-top:10px;
+
+    color:var(--text-light);
+    font-style:italic;
+}
+
+/***************************************************
+CHECKLIST
+***************************************************/
+.checklist{
+    margin-left:20px;
+}
+
+.checklist li{
+    margin-bottom:10px;
+}
+
+/***************************************************
+DETAILS
+***************************************************/
+details{
+
+    background:#f9fafb;
+    border:1px solid var(--border);
+
+    border-radius:10px;
+    padding:15px;
+
+    margin-top:15px;
+}
+
+summary{
+    cursor:pointer;
+    font-weight:600;
+}
+
+/***************************************************
+FOOTER
+***************************************************/
+footer{
+
+    text-align:center;
+
+    padding:40px;
+
+    color:var(--text-light);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <h1>Déploiement Apache Airflow 3.x</h1>
+
+        <p class="subtitle">
+            Architecture • Installation • Exploitation
+        </p>
+
+        <div class="metadata">
+            <span>📅 27 Septembre 2026</span>
+            <span>✍️ Benyahia Zekrini</span>
+            <span>🏷️ Airflow / DevOps</span>
+        </div>
+
+    </div>
+
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <h3>📚 Sommaire</h3>
+
+        <ul>
+            <li>#introIntroduction</a></li>
+            <li>#architectureArchitecture</a></li>
+            <li>#prerequisPré-requis</a></li>
+            <li>#installationInstallation</a></li>
+            <li>#validationValidation</a></li>
+            <li>#troubleshootingTroubleshooting</a></li>
+        </ul>
+
+    </aside>
+
+    <main class="content">
+
+        <section id="intro">
+
+            <h2>Introduction</h2>
+
+            <p>
+                Cette documentation décrit l'installation et
+                la configuration de la plateforme Apache Airflow.
+            </p>
+
+            <div class="callout info">
+                ℹ️ Cette procédure est destinée aux
+                administrateurs Linux et équipes DevOps.
+            </div>
+
+        </section>
+
+        <section id="architecture">
+
+            <h2>Architecture cible</h2>
+
+            <p>
+                L'architecture repose sur plusieurs composants.
+            </p>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Serveur</th>
+                        <th>Rôle</th>
+                        <th>Ports</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>AIRFLOW-01</td>
+                        <td>Webserver + Scheduler</td>
+                        <td>8080</td>
+                    </tr>
+
+                    <tr>
+                        <td>PGSQL-01</td>
+                        <td>PostgreSQL</td>
+                        <td>5432</td>
+                    </tr>
+
+                    <tr>
+                        <td>REDIS-01</td>
+                        <td>Message Broker</td>
+                        <td>6379</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <figure class="figure">
+
+                images/architecture.png
+
+                <figcaption>
+                    Figure 1 - Architecture cible
+                </figcaption>
+
+            </figure>
+
+        </section>
+
+        <section id="prerequis">
+
+            <h2>Pré-requis</h2>
+
+            <ul class="checklist">
+                <li>✅ Linux Oracle 9</li>
+                <li>✅ Python 3.12</li>
+                <li>✅ PostgreSQL</li>
+                <li>✅ Redis</li>
+                <li>✅ Accès sudo</li>
+            </ul>
+
+            <div class="callout warning">
+                ⚠️ Vérifier que SELinux et le firewall
+                autorisent les flux réseau nécessaires.
+            </div>
+
+        </section>
+
+        <section id="installation">
+
+            <h2>Installation</h2>
+
+            <h3>Création de l'environnement virtuel</h3>
+
+            <pre><code>
+python3.12 -m venv airflow
+source airflow/bin/activate
+            </code></pre>
+
+            <h3>Installation Airflow</h3>
+
+            <pre><code>
+pip install apache-airflow
+            </code></pre>
+
+            <details>
+
+                <summary>Afficher les paramètres avancés</summary>
+
+                <p>
+                    Ajouter ici toute la configuration
+                    complémentaire.
+                </p>
+
+            </details>
+
+        </section>
+
+        <section id="validation">
+
+            <h2>Validation</h2>
+
+            <div class="callout success">
+                ✅ L'installation est conforme si
+                l'interface Airflow est accessible.
+            </div>
+
+            <pre><code>
+airflow version
+            </code></pre>
+
+        </section>
+
+        <section id="troubleshooting">
+
+            <h2>Troubleshooting</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Erreur</th>
+                        <th>Cause</th>
+                        <th>Résolution</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Connection refused</td>
+                        <td>Port fermé</td>
+                        <td>Vérifier firewall</td>
+                    </tr>
+
+                    <tr>
+                        <td>DB timeout</td>
+                        <td>PostgreSQL indisponible</td>
+                        <td>Tester le réseau</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<footer>
+
+    Documentation générée pour GitHub Pages • 2026
+
+</footer>
+
+</body>
+</html>
