@@ -1,6 +1,5 @@
 # Construire des applications Agentic AI de niveau production
 
-> Cours complet reconstruit à partir d'un crash course (Krish Naik Academy, formateurs : Divesh, Yash, Chirantan, Paul) couvrant les quatre piliers indispensables pour construire des agents IA fiables et déployables en production : **Guardrails**, **Evals**, **Mémoire agentique**, **Agent Ops**.
 
 ---
 
