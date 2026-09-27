@@ -1,6 +1,5 @@
 # Sécuriser l'IA en entreprise : de l'« AI Security » à la « Security for AI »
 
-> Cours synthétisé à partir d'un épisode du podcast *Ask Developer*, avec pour invité Tarek Dawood, Product Manager chez Microsoft (Identity & Sécurité). Le contenu original était un échange oral en arabe égyptien ; il a été restructuré, reformulé et organisé ici en parcours pédagogique.
 
 ---
 
